@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile-first Responsive Layout</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
     <link href="./css/normalize.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
 </head>
@@ -14,7 +15,8 @@
 			<h1 class="name"><a href="#">Tashan Duncan</a></h1>
 			<ul class="main-nav">
 				<li><a href="#">Home</a></li>
-				<li><a href="#">Portfolio</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Skills</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
 		</div>
@@ -23,43 +25,60 @@
 
     <main>
         <section>
-            <div class="banner">
-                <img src="./images/responsive-layout-profile.png" class="profile-img">
-                <p>Hi! Im a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use</p>
+            <div class="banner clearfix">
+                    <img src="./images/responsive-layout-profile.png" class="profile-img">
+                    <p>Hi! Im a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
             </div>
         </section>
         <section>
             <div class="container">
                 <h2>Portfolio</h2>
-                <div>
+                <div class="primary col">
                     <img src="./images/portfolio-1.png" alt="Marketing Page">
                     <h3>Marketing Page</h3>
                     <p>This project shows the front page of a marketing website meant for a specific business im interested in.</p>
                 </div>
-                <div>
+                <div class="secondary col">
                     <img src="./images/portfolio-2.png" alt="Search Page">
                     <h3>Search Page</h3>
                     <p>This projectg shows the front page of a marketing website meant for a specific business im interested in.</p>
                 </div>
-                <div>
+                <div class="primary col">
                     <img src="./images/portfolio-3.png" alt="Travel App">
                     <h3>Travel App</h3>
                     <p>This projectg shows the front page of a marketing website meant for a specific business im interested in.</p>
                 </div>
-                <div>
+                <div class="secondary col">
                     <img src="./images/portfolio-4.png" alt="Map of favorite Spots">
                     <h3>Map of favorite Spots</h3>
                     <p>This projectg shows the front page of a marketing website meant for a specific business im interested in.</p>
                 </div>
-                <div>
+                <div class="primary col">
                     <img src="./images/portfolio-5.png" alt="Photo Gallery">
                     <h3>Photo Gallery</h3>
                     <p>This projectg shows the front page of a marketing website meant for a specific business im interested in.</p>
                 </div>
-                <div>
+                <div class="secondary col">
                     <img src="./images/portfolio-6.png" alt="Calculator">
                     <h3>Calculator</h3>
                     <p>This projectg shows the front page of a marketing website meant for a specific business im interested in.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container skills clearfix">
+                <h2>skills</h2>
+                <div class="primary col">
+                    <img src="./images/HTML5_Logo.svg" alt="HTML Logo">
+                    <h3>HTML</h3>
+                </div>
+                <div class="secondary col">
+                    <img src="./images/CSS3_logo_and_wordmark.svg" alt="CSS Logo">
+                    <h3>CSS</h3>
+                </div>
+                <div class="tertiary col">
+                    <img src="./images/Unofficial_JavaScript_logo_2.svg" alt="JavaScript Logo">
+                    <h3>JavaScript</h3>
                 </div>
             </div>
         </section>
@@ -75,6 +94,12 @@
             <div class="container clearfix">
                 <h1 class="foot-name"><a href="#">Tashan Duncan</a></h1>
                 <span><a href="#top">Back To Top</a></span>
+                <ul class="footer-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </div>
         </footer>
     </main>
