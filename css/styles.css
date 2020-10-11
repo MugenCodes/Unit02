@@ -1,7 +1,256 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
 * {
-    box-sizing: border-box;
-  }
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.6;
+  color: grey;
+  text-align: center;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: grey;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
 
 img {
-    max-width: 100%;
+	max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+  font-size: 1.25em;
+  background-color: fafafa;
+}
+
+ul.main-nav {
+  padding: 0;
+}
+
+.name a,
+.main-nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: black;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+.name, .main-nav li{
+  text-align: center;
+  font-weight: bold;
+  color: black;
+	margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.main-nav li{
+  background-color: white;
+}
+
+.foot-name, .main-footer a{
+  font-size: 1em;
+  text-align: center;
+  padding: 10px 15px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+
+}
+
+.foot-name{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main-footer span a{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header{
+  background-color: #fafafa;
+  padding: 10px 0px;
+}
+
+.banner {
+	background-color: #fafafa;
+  padding: 5px 5px;
+  margin-bottom: 15px;
+}
+
+.main-footer {
+  border-top: grey solid 1px;
+	background: #fafafa;
+	padding: 2em 0;
+  text-align: center;
+  position: relative;
+  
+}
+
+.contact {
+  margin: 100px 0px 50px 0px;
+}
+
+.col{
+	text-align: center;
+
+}
+
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+	
+}
+
+.profile-img {
+  width: 70%;
+  
+}
+
+.contact p {
+  margin-bottom: 0px;
+}
+
+.contact span {
+  font-weight: bold;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+	.container{
+		width: 90%;
+		margin: 2em auto;
+		max-width: 1150px;
+	}
+
+	.primary{
+		width:55%;
+	}	
+
+	.secondary{
+		width: 45%;
+	}	
+
+	.col{
+		float: left;
+		padding-left: 1em;
+		padding-right: 1em;
+		text-align:
+		 left;
+	}
+	.main-nav {
+		float: right;
+	}
+
+	.name,
+	.main-nav li {
+		float: left;
+	}
+
+	.main-nav li {
+		margin-left: 30px;
+	}
+
+
+}
+
+@media (min-width: 1025px) {
+
+
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+	.container{
+		width: 80%;
+		margin: 2em auto;
+		max-width: 1150px;
+	}
+
+	.primary{
+		width:40%;
+	}	
+
+	.secondary{
+		width: 30%;
+	}	
+
+	.tertiary{
+		width: 30%;
+	}	
+
+	.col{
+		float: left;
+		padding-left: 1em;
+		padding-right: 1em;
+		text-align: left;
+	}
+
 }
