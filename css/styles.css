@@ -53,7 +53,6 @@ ul {
 
 .name {
   font-size: 1.25em;
-  background-color: fafafa;
 }
 
 ul.main-nav {
@@ -130,8 +129,8 @@ ul.main-nav {
 
 .main-footer {
   border-top: grey solid 1px;
-	background: #fafafa;
-	padding: 2em 0;
+  background: #fafafa;
+  padding: 2px 2px;
   text-align: center;
   position: relative;
 }
@@ -207,7 +206,9 @@ ul.main-nav {
 
 @media (min-width: 769px) {
 
-
+  a{
+    background-color: #fafafa;
+  }
 
 	/* ---- Float clearfix ---- */
 
@@ -222,10 +223,11 @@ ul.main-nav {
 		margin: 2em auto;
 		max-width: 1150px;
   }
+
+
   
 	.banner{
 		width: 100%;
-		max-width: 1150px;
   }
 
   .profile-img{
@@ -236,7 +238,7 @@ ul.main-nav {
   }
 
   .banner p{
-    width: 60%;
+    width: 55%;
     display: inline-block;
     text-align: left;
     font-size: 1.25em;
@@ -277,7 +279,8 @@ ul.main-nav {
 
   .foot-name, 
   .footer-nav li {
-		float: left;
+    float: left;
+    background-color: #fafafa;
 	}
 
   footer span {
@@ -304,18 +307,47 @@ ul.main-nav {
 	}
 
 	.primary{
-		width:50%;
+		width:33%;
 	}	
 
 	.secondary{
-		width: 50%;
-	}	
+		width: 33%;
+  }
+  
+  .tertiary{
+    width: 33%;
+  }
 
 	.col{
 		float: left;
 		padding-left: 1em;
 		padding-right: 1em;
-		text-align: left;
+		text-align: center;
 	}
 
+  .name, .main-nav a {
+    text-align: center;
+    display: inline-block;
+    padding: 10px 15px;
+  }
+
+  .name {
+    margin-left: 1em;
+  }
+
+.main-nav{
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
+
+.name  {
+  float: right;
+  position: absolute;
+  margin-top: 1em;
+  top: 0;
+  left: 0;
+}
+}
+
