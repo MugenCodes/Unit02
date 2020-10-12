@@ -204,7 +204,7 @@ ul.main-nav {
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
   a{
     background-color: #fafafa;
@@ -288,7 +288,7 @@ ul.main-nav {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 
 
 
